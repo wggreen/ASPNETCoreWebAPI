@@ -1,10 +1,11 @@
 # ASP.NET Core Web API (Udemy Course Project)
 
 This repository contains my practice code and exercises from the Udemy course  
-**Build ASP.NET Core Web API - Scratch To Finish (.NET 8 API)** by Sameer Saini.  
+[**Build ASP.NET Core Web API - Scratch To Finish (.NET 8 API)**](https://www.udemy.com/course/build-rest-apis-with-aspnet-core-web-api-entity-framework/) by Sameer Saini.  
 
 The goal of this project is to learn how to build, test, and deploy RESTful APIs using **ASP.NET Core 8**,  
 with a focus on Entity Framework Core, database integration, and clean coding practices.
+
 
 ---
 
