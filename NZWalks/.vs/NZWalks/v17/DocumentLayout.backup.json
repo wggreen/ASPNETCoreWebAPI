@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "NZWalks.API\\Models\\Domain\\Walk.cs",
               "ToolTip": "C:\\Users\\willg\\ASPNETCoreWebAPI\\NZWalks\\NZWalks.API\\Models\\Domain\\Walk.cs",
               "RelativeToolTip": "NZWalks.API\\Models\\Domain\\Walk.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-19T18:19:40.586Z",
               "EditorCaption": ""
@@ -63,8 +63,7 @@
               "RelativeToolTip": "NZWalks.API\\Models\\Domain\\Region.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T18:18:06.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T18:18:06.601Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "NZWalks.API\\Models\\Domain\\Difficulty.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T18:17:03.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-19T18:17:03.699Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "NZWalks.API\\Controllers\\StudentsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T18:48:09.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T18:48:09.265Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "NZWalks.API\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T18:29:04.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T18:29:04.546Z"
             },
             {
               "$type": "Document",
@@ -115,8 +111,7 @@
               "RelativeToolTip": "NZWalks.API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-18T18:22:14.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T18:22:14.056Z"
             }
           ]
         }
