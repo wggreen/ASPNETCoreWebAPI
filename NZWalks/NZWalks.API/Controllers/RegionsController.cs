@@ -10,11 +10,11 @@ namespace NZWalks.API.Controllers
     [ApiController]
     public class RegionsController : ControllerBase
     {
-        private readonly NZWalksDBContext dBContext;
+        private readonly NZWalksDBContext dbContext;
 
-        public RegionsController(NZWalksDBContext dBContext)
+        public RegionsController(NZWalksDBContext dbContext)
         {
-            this.dBContext = dBContext;
+            this.dbContext = dbContext;
         }
 
         // GET ALL REGIONS
@@ -22,9 +22,28 @@ namespace NZWalks.API.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-
+            var regions = dbContext.Regions.ToList();
 
             return Ok(regions);
         }
+
+        // GET SINGLE REGION (Get Region By ID)
+        // GET: https//:localhost:portnumber/api/regions/{id}
+        [HttpGet]
+        [Route("{id:Guid}")]
+        public IActionResult GetById([FromRoute] Guid id)
+        {
+            //var region = dbContext.Regions.Find(id);
+
+            var region = dbContext.Regions.FirstOrDefault(x => x.Id == id);
+
+            if (region == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(region);
+        }
+
     }
 }
