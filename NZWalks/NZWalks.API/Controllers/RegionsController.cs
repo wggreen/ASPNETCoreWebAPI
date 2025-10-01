@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using NZWalks.API.Data;
 using NZWalks.API.Models.Domain;
 using NZWalks.API.Models.DTO;
+using NZWalks.API.Repositories;
 
 namespace NZWalks.API.Controllers
 {
@@ -13,10 +14,12 @@ namespace NZWalks.API.Controllers
     public class RegionsController : ControllerBase
     {
         private readonly NZWalksDBContext dbContext;
+        private readonly IRegionRepository regionRepository;
 
-        public RegionsController(NZWalksDBContext dbContext)
+        public RegionsController(NZWalksDBContext dbContext, IRegionRepository regionRepository)
         {
             this.dbContext = dbContext;
+            this.regionRepository = regionRepository;
         }
 
         // GET ALL REGIONS
@@ -25,7 +28,7 @@ namespace NZWalks.API.Controllers
         public async Task<IActionResult> GetAll()
         {
             // Get Data from Database - Domain models
-            var regions = await dbContext.Regions.ToListAsync();
+            var regions = await regionRepository.GetAllAsync();
 
             // Map Domain Models to DTOs
             var regionsDTO = new List<RegionDTO>();
