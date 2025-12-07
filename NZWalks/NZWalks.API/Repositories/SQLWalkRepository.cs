@@ -1,23 +1,29 @@
-﻿using NZWalks.API.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using NZWalks.API.Data;
 using NZWalks.API.Models.Domain;
 
 namespace NZWalks.API.Repositories
 {
     public class SQLWalkRepository : IWalkRepository
     {
-        private readonly NZWalksDBContext dBContext;
+        private readonly NZWalksDBContext dbContext;
 
-        public SQLWalkRepository(NZWalksDBContext dBContext)
+        public SQLWalkRepository(NZWalksDBContext dbContext)
         {
-            this.dBContext = dBContext;
+            this.dbContext = dbContext;
         }
 
 
         public async Task<Walk> CreateAsync(Walk walk)
         {
-            await dBContext.Walks.AddAsync(walk);
-            await dBContext.SaveChangesAsync();
+            await dbContext.Walks.AddAsync(walk);
+            await dbContext.SaveChangesAsync();
             return walk;
+        }
+
+        public async Task<List<Walk>> GetAllAsync()
+        {
+            return await dbContext.Walks.ToListAsync();
         }
     }
 }
